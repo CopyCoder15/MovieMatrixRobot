@@ -18,9 +18,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ""))
-API_HASH = environ.get('API_HASH', "")
-BOT_TOKEN = environ.get('BOT_TOKEN', "7121730083:IZywWw2UeuN-9ElCqIbm_II")
+API_ID = int(environ.get('API_ID', "27358729"))
+API_HASH = environ.get('API_HASH', "6910fe5c69fb5fb2214162099ffe526c")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7963198119:AAEdzpcHYsX3a03kFdC1PgbksF6qMKitGR8")
 TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 
 # Bot settings
@@ -37,7 +37,7 @@ QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/8bc2cc53e47180bc78c10.j
 REFERAL_TIME = int(environ.get('REFERAL_USER_TIME', "2592000")) # set in seconds | already seted 1 month premium
 REFFER_POINT = int(environ.get('USER_POINT', "50")) # Set Referel point Count 
 #premium Users Satuts
-premium = environ.get('PREMIUM_LOGS', '-1001998895377')
+premium = environ.get('PREMIUM_LOGS', '-1002490649550)
 PREMIUM_LOGS = int(premium) if premium and id_pattern.search(premium) else None
 # lock file, set file limit 
 FILE_LIMITE = int(environ.get('FILE_LIMITE', 15))
@@ -46,7 +46,7 @@ LIMIT_MODE = is_enabled((environ.get('LIMIT_MODE', 'True')), False)
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5069888600').split()]
-OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "Safaridev") # widout 👉 @
+OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "CopyC0der") # widout 👉 @
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002101778109').split()]
 # post channel auto post new movie
 POST_CHANNELS = list(map(int, (channel.strip() for channel in environ.get('POST_CHANNELS', '-1001998895377').split(','))))
@@ -94,8 +94,8 @@ PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/up')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Safaribotts')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001433302422))
-GROUP_VERIFY_LOGS = int(environ.get('GROUP_VERIFY_LOGS', -1001998895377)) # Group verify stats 
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002490649550))
+GROUP_VERIFY_LOGS = int(environ.get('GROUP_VERIFY_LOGS', -1002476256517)) # Group verify stats 
 REQ_CHANNEL = int(environ.get('REQ_CHANNEL', -1001998895377)) # movies request channel, else log channel
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Jhwjwp')
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
